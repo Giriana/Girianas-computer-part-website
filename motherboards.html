@@ -4,46 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know Your PC - Motherboards</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Same CSS as index.html */
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">Know Your PC</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cases.html">Cases</a></li>
-                <li><a href="motherboards.html" class="active">Motherboards</a></li>
-                <!-- Other navigation items -->
-            </ul>
-        </nav>
+        <h1>Know Your PC</h1>
+        <p>Understanding Motherboards</p>
     </header>
-
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cases.html">Cases & Form Factors</a></li>
+            <li><a href="motherboards.html">Motherboards</a></li>
+            <li><a href="bios.html">BIOS/UEFI</a></li>
+            <li><a href="memory.html">Memory</a></li>
+            <li><a href="processors.html">Processors (CPUs)</a></li>
+            <li><a href="video-cards.html">Video & Expansion Cards</a></li>
+            <li><a href="cooling.html">Cooling</a></li>
+            <li><a href="power-supply.html">Power Supply</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
     <main>
-        <section class="component-header">
-            <h1>Motherboards</h1>
-            <p>The main circuit board that connects all components in your computer</p>
-        </section>
-
-        <section class="component-content">
-            <div class="component-info">
-                <h2>About Motherboards</h2>
-                <img src="images/motherboard.jpg" alt="Motherboard">
-                <p>The motherboard is the primary circuit board in a computer that connects all components together. It determines what type of processor, memory, and other components can be used.</p>
-                
-                <!-- More motherboard-specific content -->
+        <article class="component-page">
+            <h2>Motherboards</h2>
+            
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Motherboard">
+            
+            <h3>What is a Motherboard?</h3>
+            <p>The motherboard is the main printed circuit board (PCB) in a computer. It holds and allows communication between many of the crucial electronic components of a system, such as the central processing unit (CPU) and memory, and provides connectors for other peripherals.</p>
+            
+            <h3>Key Components of a Motherboard</h3>
+            <ul>
+                <li><strong>CPU Socket:</strong> Where the processor is installed</li>
+                <li><strong>RAM Slots:</strong> For memory modules</li>
+                <li><strong>Chipset:</strong> Manages data flow between components</li>
+                <li><strong>Expansion Slots:</strong> PCIe slots for graphics cards and other expansion cards</li>
+                <li><strong>Storage Connectors:</strong> SATA and M.2 for drives</li>
+                <li><strong>Power Connectors:</strong> For the PSU to supply power</li>
+                <li><strong>I/O Ports:</strong> USB, audio, Ethernet, etc.</li>
+            </ul>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/example2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-
-            <div class="component-media">
-                <h2>Media Resources</h2>
-                <!-- Motherboard-specific videos and resources -->
+            
+            <div class="troubleshooting">
+                <h3>Troubleshooting Tips</h3>
+                <ul>
+                    <li><strong>No power:</strong> Check all power connections, especially 24-pin and CPU power</li>
+                    <li><strong>No display:</strong> Verify RAM is properly seated and compatible</li>
+                    <li><strong>USB ports not working:</strong> Check for bent pins or driver issues</li>
+                    <li><strong>Random crashes:</strong> Update BIOS and check for overheating components</li>
+                </ul>
             </div>
-        </section>
+        </article>
     </main>
-
+    
     <footer>
         <p>&copy; 2023 Know Your PC. All rights reserved.</p>
-        <p>Educational project based on Lab Sims unit 3 Hardware.</p>
+        <p>Educational project for computer hardware learning.</p>
     </footer>
 </body>
 </html>
