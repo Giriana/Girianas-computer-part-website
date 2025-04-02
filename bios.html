@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your PC - BIOS/UEFI</title>
+    <style>
+        /* Same CSS as index.html */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Know Your PC</h1>
+        <p>Understanding BIOS/UEFI</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cases.html">Cases & Form Factors</a></li>
+            <li><a href="motherboards.html">Motherboards</a></li>
+            <li><a href="bios.html">BIOS/UEFI</a></li>
+            <li><a href="memory.html">Memory</a></li>
+            <li><a href="processors.html">Processors (CPUs)</a></li>
+            <li><a href="video-cards.html">Video & Expansion Cards</a></li>
+            <li><a href="cooling.html">Cooling</a></li>
+            <li><a href="power-supply.html">Power Supply</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article class="component-page">
+            <h2>BIOS/UEFI</h2>
+            
+            <img src="https://images.unsplash.com/photo-1587202372775-e229f172cd04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="BIOS/UEFI Interface">
+            
+            <h3>What is BIOS/UEFI?</h3>
+            <p>BIOS (Basic Input/Output System) and its modern replacement UEFI (Unified Extensible Firmware Interface) are low-level software that starts when you power on your computer, before the operating system loads. They initialize and test hardware components, then load the bootloader to start the OS.</p>
+            
+            <h3>Key Functions</h3>
+            <ul>
+                <li><strong>POST (Power-On Self-Test):</strong> Checks hardware components before boot</li>
+                <li><strong>Hardware Initialization:</strong> Sets up and configures hardware</li>
+                <li><strong>Boot Device Selection:</strong> Determines which device to boot from</li>
+                <li><strong>CMOS Setup:</strong> Provides interface for hardware configuration</li>
+                <li><strong>Hardware Monitoring:</strong> Tracks temperatures, voltages, and fan speeds</li>
+            </ul>
+            
+            <h3>BIOS vs UEFI</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>BIOS</th>
+                    <th>UEFI</th>
+                </tr>
+                <tr>
+                    <td>Interface</td>
+                    <td>Text-based</td>
+                    <td>Graphical, mouse support</td>
+                </tr>
+                <tr>
+                    <td>Boot Time</td>
+                    <td>Slower</td>
+                    <td>Faster</td>
+                </tr>
+                <tr>
+                    <td>Disk Support</td>
+                    <td>MBR only (up to 2TB)</td>
+                    <td>GPT (disks over 2TB)</td>
+                </tr>
+                <tr>
+                    <td>Security</td>
+                    <td>Basic</td>
+                    <td>Secure Boot feature</td>
+                </tr>
+            </table>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/example3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class="troubleshooting">
+                <h3>Troubleshooting Tips</h3>
+                <ul>
+                    <li><strong>Can't enter BIOS:</strong> Try different keys (Del, F2, F10, F12) or disable Fast Boot</li>
+                    <li><strong>Boot device not recognized:</strong> Check boot order and SATA mode (AHCI/IDE)</li>
+                    <li><strong>CMOS settings reset:</strong> Replace CMOS battery if settings don't persist</li>
+                    <li><strong>Secure Boot issues:</strong> Disable Secure Boot or update BIOS for compatibility</li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Know Your PC. All rights reserved.</p>
+        <p>Educational project for computer hardware learning.</p>
+    </footer>
+</body>
+</html>
