@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know Your PC - Cases & Form Factors</title>
-    <style>
-        /* Same CSS as index.html */
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Know Your PC</h1>
-        <p>Understanding Computer Cases & Form Factors</p>
+        <h1>Computer Cases & Form Factors</h1>
     </header>
     
     <nav>
@@ -29,52 +26,59 @@
         </ul>
     </nav>
     
-    <main>
-        <article class="component-page">
+    <div class="container">
+        <section class="component-header">
             <h2>Computer Cases & Form Factors</h2>
-            
-            <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Computer Case">
-            
-            <h3>What is a Computer Case?</h3>
-            <p>A computer case, also known as a chassis, tower, system unit, or cabinet, is the enclosure that contains most of the components of a personal computer (usually excluding the display, keyboard, and mouse).</p>
-            
-            <h3>Functions of a Computer Case</h3>
-            <ul>
-                <li>Protects components from physical damage and dust</li>
-                <li>Provides structural support for internal components</li>
-                <li>Helps with cooling by providing space for fans and airflow</li>
-                <li>Shields against electromagnetic interference</li>
-                <li>Provides ports and buttons for user interaction</li>
-            </ul>
-            
-            <h3>Form Factors</h3>
-            <p>Computer cases come in different sizes and layouts known as form factors. The most common include:</p>
-            <ul>
-                <li><strong>ATX:</strong> The standard size for most desktop PCs (12 x 9.6 inches)</li>
-                <li><strong>Micro-ATX:</strong> A smaller version of ATX (9.6 x 9.6 inches)</li>
-                <li><strong>Mini-ITX:</strong> Very compact form factor (6.7 x 6.7 inches)</li>
-                <li><strong>E-ATX:</strong> Extended ATX for high-end systems (12 x 13 inches)</li>
-            </ul>
-            
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/example1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <div class="troubleshooting">
-                <h3>Troubleshooting Tips</h3>
+            <p>The enclosure that contains most of the components of a computer</p>
+        </section>
+        
+        <div class="component-content">
+            <div class="component-info">
+                <h3>Description and Function</h3>
+                <p>The computer case is the enclosure that contains most of the components of a computer (usually excluding the display, keyboard, and mouse). Cases are usually constructed from steel, aluminum, and plastic.</p>
+                
+                <p>Common form factors include:</p>
                 <ul>
-                    <li><strong>Overheating:</strong> Ensure proper airflow and clean dust filters regularly</li>
-                    <li><strong>Noise:</strong> Check for loose components or failing case fans</li>
-                    <li><strong>Component doesn't fit:</strong> Verify case supports your motherboard and GPU size</li>
-                    <li><strong>Front ports not working:</strong> Check internal connections to motherboard</li>
+                    <li><strong>Full Tower:</strong> Largest case type (20-30 inches tall)</li>
+                    <li><strong>Mid Tower:</strong> Most common size (15-20 inches tall)</li>
+                    <li><strong>Mini Tower:</strong> Compact size (12-15 inches tall)</li>
+                    <li><strong>SFF:</strong> Small Form Factor (under 12 inches)</li>
                 </ul>
+                
+                <p>Key functions:</p>
+                <ol>
+                    <li>Protects components from dust and damage</li>
+                    <li>Provides structural support</li>
+                    <li>Manages airflow and cooling</li>
+                    <li>Reduces electromagnetic interference</li>
+                </ol>
             </div>
-        </article>
-    </main>
+            
+            <div class="component-image">
+                <img src="images/case.jpg" alt="Computer Case">
+            </div>
+        </div>
+        
+        <div class="troubleshooting">
+            <h3>Troubleshooting Tips</h3>
+            <ul>
+                <li><strong>Overheating:</strong> Clean dust filters, ensure proper airflow</li>
+                <li><strong>Noise:</strong> Check for loose components or failing fans</li>
+                <li><strong>Component doesn't fit:</strong> Verify case compatibility before purchase</li>
+            </ul>
+        </div>
+        
+        <div class="video-container">
+            <h3>Related Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/paB45GzSnwE" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
     
     <footer>
-        <p>&copy; 2023 Know Your PC. All rights reserved.</p>
-        <p>Educational project for computer hardware learning.</p>
+        <p>&copy; 2023 Know Your PC. Educational purposes only.</p>
     </footer>
 </body>
+</html>
 </html>
