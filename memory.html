@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Know Your PC - Memory (RAM)</title>
-    <style>
-        /* Same CSS as index.html */
-    </style>
+    <title>Know Your PC - Memory</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Know Your PC</h1>
-        <p>Understanding Memory (RAM)</p>
+        <h1>Memory (RAM)</h1>
     </header>
     
     <nav>
@@ -29,50 +26,56 @@
         </ul>
     </nav>
     
-    <main>
-        <article class="component-page">
-            <h2>Memory (RAM)</h2>
-            
-            <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="RAM Memory">
-            
-            <h3>What is RAM?</h3>
-            <p>Random Access Memory (RAM) is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code. It is volatile memory, meaning it loses its contents when power is removed.</p>
-            
-            <h3>Types of RAM</h3>
-            <ul>
-                <li><strong>DRAM (Dynamic RAM):</strong> Needs constant refreshing, used for main system memory</li>
-                <li><strong>SRAM (Static RAM):</strong> Faster but more expensive, used for cache</li>
-                <li><strong>SDRAM (Synchronous DRAM):</strong> Synchronized with system clock</li>
-                <li><strong>DDR SDRAM (Double Data Rate):</strong> Current standard (DDR4, DDR5)</li>
-            </ul>
-            
-            <h3>RAM Specifications</h3>
-            <ul>
-                <li><strong>Capacity:</strong> Measured in GB (4GB, 8GB, 16GB, etc.)</li>
-                <li><strong>Speed:</strong> Measured in MHz (2400MHz, 3200MHz, etc.)</li>
-                <li><strong>Latency:</strong> CAS latency (CL) timings (CL16, CL18, etc.)</li>
-                <li><strong>Form Factor:</strong> DIMM (desktop), SODIMM (laptop)</li>
-            </ul>
-            
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/example4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <div class="troubleshooting">
-                <h3>Troubleshooting Tips</h3>
+    <div class="container">
+        <section class="component-header">
+            <h2>Random Access Memory (RAM)</h2>
+            <p>Temporary storage for active programs and data</p>
+        </section>
+        
+        <div class="component-content">
+            <div class="component-info">
+                <h3>Description and Function</h3>
+                <p>RAM is volatile memory that temporarily stores data the CPU needs quick access to while performing tasks.</p>
+                
+                <p>Key characteristics:</p>
                 <ul>
-                    <li><strong>No boot/beeps:</strong> Reseat RAM modules and check compatibility</li>
-                    <li><strong>BSODs/crashes:</strong> Run memory diagnostics (Windows Memory Diagnostic)</li>
-                    <li><strong>Not all RAM detected:</strong> Check for OS limitations (32-bit vs 64-bit)</li>
-                    <li><strong>Performance issues:</strong> Ensure RAM is running at correct speed in BIOS</li>
+                    <li><strong>Volatile:</strong> Loses data when powered off</li>
+                    <li><strong>Fast:</strong> Much faster than SSDs/HDDs</li>
+                    <li><strong>Capacity:</strong> Typically 8GB-32GB in modern systems</li>
+                </ul>
+                
+                <p>Common types:</p>
+                <ul>
+                    <li><strong>DDR4:</strong> Current standard (2014-present)</li>
+                    <li><strong>DDR5:</strong> Newer standard with higher speeds</li>
+                    <li><strong>SO-DIMM:</strong> Laptop memory form factor</li>
                 </ul>
             </div>
-        </article>
-    </main>
+            
+            <div class="component-image">
+                <img src="images/ram.jpg" alt="RAM Memory">
+            </div>
+        </div>
+        
+        <div class="troubleshooting">
+            <h3>Troubleshooting Tips</h3>
+            <ul>
+                <li><strong>No boot:</strong> Reseat RAM modules</li>
+                <li><strong>Crashes:</strong> Run memory diagnostics</li>
+                <li><strong>Not recognized:</strong> Check compatibility</li>
+            </ul>
+        </div>
+        
+        <div class="video-container">
+            <h3>Related Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-aQOv3T7P8E" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
     
     <footer>
-        <p>&copy; 2023 Know Your PC. All rights reserved.</p>
-        <p>Educational project for computer hardware learning.</p>
+        <p>&copy; 2023 Know Your PC. Educational purposes only.</p>
     </footer>
 </body>
 </html>
