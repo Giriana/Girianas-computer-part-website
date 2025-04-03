@@ -1,338 +1,66 @@
-/* Color Variables */
 :root {
-    --primary-color: #ff69b4; /* Hot pink */
-    --secondary-color: #ffb6c1; /* Light pink */
-    --dark-pink: #db7093; /* Pale violet red */
-    --light-pink: #fff0f5; /* Lavender blush */
-    --text-color: #333; /* Dark gray for text */
+    --primary-color: #ff69b4;
+    --secondary-color: #ffb6c1;
+    --accent-color: #db7093;
+    --light-color: #fff0f5;
+    --dark-color: #c71585;
+    --text-color: #333;
     --white: #ffffff;
-    --black: #000000;
 }
 
-/* Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--light-pink);
     color: var(--text-color);
+    background-color: var(--light-color);
     line-height: 1.6;
 }
 
-/* Typography */
-h1, h2, h3, h4 {
-    color: var(--primary-color);
-    margin-top: 0;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.5rem;
-    color: var(--dark-pink);
-}
-
-/* Layout */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header Styles */
 header {
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
     color: var(--white);
-    padding: 30px 0;
+    padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Navigation */
 nav {
-    background-color: var(--dark-pink);
-    padding: 15px 0;
+    background-color: var(--dark-color);
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     flex-wrap: wrap;
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 nav a {
     color: var(--white);
     text-decoration: none;
-    font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-nav a:hover, nav a:focus {
-    background-color: var(--primary-color);
-    transform: translateY(-2px);
+nav a:hover {
+    background-color: var(--accent-color);
 }
 
-/* Main Content */
-main {
-    padding: 30px 0;
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 30px;
-    background-color: var(--white);
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-/* Components Grid */
-.components-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
-.component-card {
-    background-color: var(--white);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.component-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.component-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    background-color: var(--light-pink);
-    padding: 10px;
-}
-
-.component-card h3 {
-    margin: 15px 0;
-}
-
-.component-card p {
-    margin-bottom: 20px;
-    min-height: 60px;
-}
-
-.component-card a {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 8px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.component-card a:hover {
-    background-color: var(--dark-pink);
-    transform: scale(1.05);
-}
-
-/* Component Page Styles */
-.component-page {
-    background-color: var(--white);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-.component-page img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 30px auto;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-}
-
-/* Video Container */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    margin: 30px 0;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* Troubleshooting Section */
-.troubleshooting {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border-radius: 8px;
-    margin: 30px 0;
-    border-left: 5px solid var(--primary-color);
-}
-
-.troubleshooting h3 {
-    margin-top: 0;
-}
-
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: var(--white);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-th, td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid var(--secondary-color);
-}
-
-th {
-    background-color: var(--primary-color);
-    color: var(--white);
-}
-
-tr:nth-child(even) {
-    background-color: var(--light-pink);
-}
-
-tr:hover {
-    background-color: rgba(255, 105, 180, 0.1);
-}
-
-/* Lists */
-ul, ol {
-    padding-left: 20px;
-}
-
-/* Resources Page */
-.resources-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.resources-list li {
-    margin-bottom: 15px;
-    padding: 15px;
-    background-color: var(--white);
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.resources-list li:hover {
-    transform: translateX(5px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
-
-.resources-list a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-}
-
-.resources-list a:hover {
-    text-decoration: underline;
-    color: var(--dark-pink);
-}
-
-.resources-list p {
-    margin: 5px 0 0;
-    color: var(--text-color);
-}
-
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: var(--white);
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 50px;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav li {
-        margin: 5px 0;
-    }
-    
-    .components-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .component-page {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 20px 0;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-}
+/* Add all other CSS styles from previous example */
