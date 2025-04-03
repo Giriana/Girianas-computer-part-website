@@ -4,194 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know Your PC - Home</title>
-    <style>
-        :root {
-            --primary-color: #ff69b4;
-            --secondary-color: #ffb6c1;
-            --dark-pink: #db7093;
-            --light-pink: #fff0f5;
-            --text-color: #333;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--light-pink);
-            color: var(--text-color);
-        }
-        
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        nav {
-            background-color: var(--dark-pink);
-            padding: 10px;
-        }
-        
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        nav li {
-            margin: 0 15px;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        
-        nav a:hover {
-            background-color: var(--primary-color);
-        }
-        
-        main {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .hero {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .components-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .component-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .component-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .component-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: contain;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        
-        .component-card h3 {
-            margin: 10px 0;
-            color: var(--primary-color);
-        }
-        
-        .component-card a {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 10px;
-        }
-        
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-        
-        /* Individual component page styles */
-        .component-page {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .component-page img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 5px;
-        }
-        
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin: 20px 0;
-        }
-        
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .troubleshooting {
-            background-color: var(--secondary-color);
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-        
-        .troubleshooting h3 {
-            margin-top: 0;
-            color: var(--dark-pink);
-        }
-        
-        .resources-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .resources-list li {
-            margin-bottom: 10px;
-        }
-        
-        .resources-list a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        .resources-list a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Know Your PC</h1>
-        <p>An educational resource about computer hardware components</p>
+        <p>An Educational Guide to Computer Hardware Components</p>
     </header>
     
     <nav>
@@ -209,75 +27,74 @@
         </ul>
     </nav>
     
-    <main>
+    <div class="container">
         <section class="hero">
             <h2>Welcome to Know Your PC!</h2>
-            <p>This educational website will help you understand the different components that make up a computer, how they function, and how they work together to create the powerful machines we use every day.</p>
-            <p>Whether you're a student, teacher, or just curious about computer hardware, you'll find valuable information here.</p>
+            <p>This educational website is designed to help you understand the different components that make up a computer, their functions, and how they work together.</p>
         </section>
         
-        <h2>Computer Components</h2>
+        <h2>Explore Computer Components</h2>
         <div class="components-grid">
             <div class="component-card">
-                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Computer Case">
+                <img src="images/case.jpg" alt="Computer Case">
                 <h3>Cases & Form Factors</h3>
-                <p>The enclosure that contains most of the components of a computer.</p>
+                <p>Learn about different computer case designs and sizes.</p>
                 <a href="cases.html">Learn More</a>
             </div>
             
             <div class="component-card">
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Motherboard">
+                <img src="images/motherboard.jpg" alt="Motherboard">
                 <h3>Motherboards</h3>
-                <p>The main printed circuit board that connects all components.</p>
+                <p>The main circuit board that connects all components.</p>
                 <a href="motherboards.html">Learn More</a>
             </div>
             
             <div class="component-card">
-                <img src="https://images.unsplash.com/photo-1587202372775-e229f172cd04?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="BIOS/UEFI">
+                <img src="images/bios.jpg" alt="BIOS/UEFI">
                 <h3>BIOS/UEFI</h3>
-                <p>Firmware used to perform hardware initialization during booting.</p>
+                <p>The firmware interface between hardware and OS.</p>
                 <a href="bios.html">Learn More</a>
             </div>
             
             <div class="component-card">
-                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RAM Memory">
+                <img src="images/ram.jpg" alt="RAM Memory">
                 <h3>Memory (RAM)</h3>
-                <p>Short-term data storage that allows quick access by the processor.</p>
+                <p>Temporary storage for active programs and data.</p>
                 <a href="memory.html">Learn More</a>
             </div>
             
             <div class="component-card">
-                <img src="https://images.unsplash.com/photo-1587202372775-e229f172cd04?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="CPU Processor">
+                <img src="images/cpu.jpg" alt="CPU Processor">
                 <h3>Processors (CPUs)</h3>
-                <p>The electronic circuitry that executes instructions of a computer program.</p>
+                <p>The brain of the computer that performs calculations.</p>
                 <a href="processors.html">Learn More</a>
             </div>
             
             <div class="component-card">
-                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Video Card">
+                <img src="images/gpu.jpg" alt="Graphics Card">
                 <h3>Video & Expansion Cards</h3>
-                <p>Components that add functionality to a computer system.</p>
+                <p>Components that add functionality to your computer.</p>
                 <a href="video-cards.html">Learn More</a>
             </div>
             
             <div class="component-card">
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cooling System">
-                <h3>Cooling</h3>
-                <p>Systems that remove waste heat from computer components.</p>
+                <img src="images/cooling.jpg" alt="Cooling System">
+                <h3>Cooling Systems</h3>
+                <p>Keeping your computer at optimal temperatures.</p>
                 <a href="cooling.html">Learn More</a>
             </div>
             
             <div class="component-card">
-                <img src="https://images.unsplash.com/photo-1587202372775-e229f172cd04?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Power Supply">
+                <img src="images/psu.jpg" alt="Power Supply">
                 <h3>Power Supply</h3>
-                <p>Converts mains AC to low-voltage regulated DC power for computer components.</p>
+                <p>Converts power for all computer components.</p>
                 <a href="power-supply.html">Learn More</a>
             </div>
         </div>
-    </main>
+    </div>
     
     <footer>
-        <p>&copy; 2023 Know Your PC. All rights reserved.</p>
-        <p>Educational project for computer hardware learning.</p>
+        <p>&copy; 2023 Know Your PC. Educational purposes only.</p>
     </footer>
-</body
+</body>
+</html>
