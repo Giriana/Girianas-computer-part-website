@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know Your PC - Motherboards</title>
-    <style>
-        /* Same CSS as index.html */
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Know Your PC</h1>
-        <p>Understanding Motherboards</p>
+        <h1>Motherboards</h1>
     </header>
     
     <nav>
@@ -29,45 +26,58 @@
         </ul>
     </nav>
     
-    <main>
-        <article class="component-page">
+    <div class="container">
+        <section class="component-header">
             <h2>Motherboards</h2>
-            
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Motherboard">
-            
-            <h3>What is a Motherboard?</h3>
-            <p>The motherboard is the main printed circuit board (PCB) in a computer. It holds and allows communication between many of the crucial electronic components of a system, such as the central processing unit (CPU) and memory, and provides connectors for other peripherals.</p>
-            
-            <h3>Key Components of a Motherboard</h3>
-            <ul>
-                <li><strong>CPU Socket:</strong> Where the processor is installed</li>
-                <li><strong>RAM Slots:</strong> For memory modules</li>
-                <li><strong>Chipset:</strong> Manages data flow between components</li>
-                <li><strong>Expansion Slots:</strong> PCIe slots for graphics cards and other expansion cards</li>
-                <li><strong>Storage Connectors:</strong> SATA and M.2 for drives</li>
-                <li><strong>Power Connectors:</strong> For the PSU to supply power</li>
-                <li><strong>I/O Ports:</strong> USB, audio, Ethernet, etc.</li>
-            </ul>
-            
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/example2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <div class="troubleshooting">
-                <h3>Troubleshooting Tips</h3>
+            <p>The main printed circuit board (PCB) in general-purpose computers</p>
+        </section>
+        
+        <div class="component-content">
+            <div class="component-info">
+                <h3>Description and Function</h3>
+                <p>A motherboard is the main printed circuit board (PCB) that holds and allows communication between crucial electronic components like the CPU and memory.</p>
+                
+                <p>Key components:</p>
                 <ul>
-                    <li><strong>No power:</strong> Check all power connections, especially 24-pin and CPU power</li>
-                    <li><strong>No display:</strong> Verify RAM is properly seated and compatible</li>
-                    <li><strong>USB ports not working:</strong> Check for bent pins or driver issues</li>
-                    <li><strong>Random crashes:</strong> Update BIOS and check for overheating components</li>
+                    <li><strong>CPU Socket:</strong> Holds the processor</li>
+                    <li><strong>RAM Slots:</strong> For memory modules</li>
+                    <li><strong>Chipset:</strong> Manages data flow</li>
+                    <li><strong>PCIe Slots:</strong> For expansion cards</li>
+                    <li><strong>SATA/M.2:</strong> For storage devices</li>
+                </ul>
+                
+                <p>Form factors:</p>
+                <ul>
+                    <li><strong>ATX:</strong> Standard size (12 × 9.6 in)</li>
+                    <li><strong>Micro-ATX:</strong> Smaller (9.6 × 9.6 in)</li>
+                    <li><strong>Mini-ITX:</strong> Compact (6.7 × 6.7 in)</li>
                 </ul>
             </div>
-        </article>
-    </main>
+            
+            <div class="component-image">
+                <img src="images/motherboard.jpg" alt="Motherboard">
+            </div>
+        </div>
+        
+        <div class="troubleshooting">
+            <h3>Troubleshooting Tips</h3>
+            <ul>
+                <li><strong>No power:</strong> Check 24-pin and CPU power connectors</li>
+                <li><strong>No display:</strong> Reseat RAM and GPU</li>
+                <li><strong>USB ports not working:</strong> Update drivers</li>
+            </ul>
+        </div>
+        
+        <div class="video-container">
+            <h3>Related Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b2pd3Y6aBag" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
     
     <footer>
-        <p>&copy; 2023 Know Your PC. All rights reserved.</p>
-        <p>Educational project for computer hardware learning.</p>
+        <p>&copy; 2023 Know Your PC. Educational purposes only.</p>
     </footer>
 </body>
 </html>
