@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Know Your PC - Processors (CPUs)</title>
-    <style>
-        /* Same CSS as index.html */
-    </style>
+    <title>Know Your PC - Processors</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Know Your PC</h1>
-        <p>Understanding Processors (CPUs)</p>
+        <h1>Processors (CPUs)</h1>
     </header>
     
     <nav>
@@ -29,53 +26,57 @@
         </ul>
     </nav>
     
-    <main>
-        <article class="component-page">
-            <h2>Processors (CPUs)</h2>
-            
-            <img src="https://images.unsplash.com/photo-1587202372775-e229f172cd04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="CPU Processor">
-            
-            <h3>What is a CPU?</h3>
-            <p>The Central Processing Unit (CPU) is the electronic circuitry that executes instructions comprising a computer program. It performs the basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions.</p>
-            
-            <h3>CPU Components</h3>
-            <ul>
-                <li><strong>ALU (Arithmetic Logic Unit):</strong> Performs mathematical operations</li>
-                <li><strong>Control Unit:</strong> Directs operations</li>
-                <li><strong>Cache:</strong> Small, fast memory for frequently used data</li>
-                <li><strong>Registers:</strong> Small storage locations for immediate data</li>
-                <li><strong>Clock:</strong> Synchronizes operations (measured in GHz)</li>
-            </ul>
-            
-            <h3>CPU Specifications</h3>
-            <ul>
-                <li><strong>Cores:</strong> Number of independent processing units (2, 4, 6, 8, etc.)</li>
-                <li><strong>Threads:</strong> Number of simultaneous instruction streams (with hyperthreading)</li>
-                <li><strong>Clock Speed:</strong> Operations per second (3.0GHz, 4.2GHz, etc.)</li>
-                <li><strong>Cache:</strong> L1, L2, L3 cache sizes</li>
-                <li><strong>TDP (Thermal Design Power):</strong> Heat output in watts</li>
-                <li><strong>Socket:</strong> Physical connector type (LGA1200, AM4, etc.)</li>
-            </ul>
-            
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/example5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <div class="troubleshooting">
-                <h3>Troubleshooting Tips</h3>
+    <div class="container">
+        <section class="component-header">
+            <h2>Central Processing Unit (CPU)</h2>
+            <p>The brain of the computer that performs calculations</p>
+        </section>
+        
+        <div class="component-content">
+            <div class="component-info">
+                <h3>Description and Function</h3>
+                <p>The CPU executes instructions from computer programs by performing basic arithmetic, logic, and I/O operations.</p>
+                
+                <p>Key components:</p>
                 <ul>
-                    <li><strong>Overheating:</strong> Check cooler installation and thermal paste</li>
-                    <li><strong>No boot:</strong> Verify CPU compatibility with motherboard</li>
-                    <li><strong>Performance issues:</strong> Check for thermal throttling or power limits</li>
-                    <li><strong>BIOS not recognizing CPU:</strong> Update motherboard BIOS</li>
+                    <li><strong>ALU:</strong> Arithmetic Logic Unit</li>
+                    <li><strong>Control Unit:</strong> Directs operations</li>
+                    <li><strong>Cache:</strong> Fast memory for frequent data</li>
+                </ul>
+                
+                <p>Performance factors:</p>
+                <ul>
+                    <li><strong>Cores:</strong> Physical processors (4-32 in modern CPUs)</li>
+                    <li><strong>Threads:</strong> Virtual cores via hyperthreading</li>
+                    <li><strong>Clock Speed:</strong> GHz (billions of cycles per second)</li>
+                    <li><strong>Cache:</strong> L1/L2/L3 cache sizes</li>
                 </ul>
             </div>
-        </article>
-    </main>
+            
+            <div class="component-image">
+                <img src="images/cpu.jpg" alt="CPU Processor">
+            </div>
+        </div>
+        
+        <div class="troubleshooting">
+            <h3>Troubleshooting Tips</h3>
+            <ul>
+                <li><strong>Overheating:</strong> Check cooler installation</li>
+                <li><strong>No boot:</strong> Verify power connections</li>
+                <li><strong>Performance issues:</strong> Check for thermal throttling</li>
+            </ul>
+        </div>
+        
+        <div class="video-container">
+            <h3>Related Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7yKycb4e7zA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
     
     <footer>
-        <p>&copy; 2023 Know Your PC. All rights reserved.</p>
-        <p>Educational project for computer hardware learning.</p>
+        <p>&copy; 2023 Know Your PC. Educational purposes only.</p>
     </footer>
 </body>
 </html>
