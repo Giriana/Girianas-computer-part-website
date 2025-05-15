@@ -1,53 +1,115 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #ffe6f0; /* light pink background */
+    background-color: #f9e6ff; /* Very light purple */
     color: #333;
 }
 
 header {
-    background-color: #d9b3ff; /* light purple */
-    color: white;
-    padding: 20px;
+    background-color: #ffccf9; /* Light pink */
+    color: #5a2d82; /* Dark purple */
+    padding: 1rem 0;
     text-align: center;
+    border-bottom: 3px solid #d8a1e8; /* Medium purple */
 }
 
 nav {
-    background-color: #f9d5ec; /* softer pink for nav */
-    padding: 10px;
+    background-color: #e6b3ff; /* Light purple */
+    padding: 0.5rem;
     text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
 nav a {
-    margin: 0 15px;
     text-decoration: none;
-    color: #8e44ad; /* purple text */
+    color: #5a2d82; /* Dark purple */
     font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #d8a1e8; /* Medium purple */
+    color: white;
 }
 
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-h1, h2 {
-    color: #b266ff; /* rich light purple */
+h1, h2, h3 {
+    color: #7a3db8; /* Purple */
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
+    margin: 1rem auto;
+    border: 2px solid #d8a1e8; /* Medium purple */
+    border-radius: 5px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer {
+    background-color: #ffccf9; /* Light pink */
+    color: #5a2d82; /* Dark purple */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 3px solid #d8a1e8; /* Medium purple */
+}
+
+/* Card styling for pros/cons */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pros {
+    border-left: 4px solid #8bc34a; /* Green */
+    padding-left: 1rem;
+}
+
+.cons {
+    border-left: 4px solid #f44336; /* Red */
+    padding-left: 1rem;
 }
 
 
