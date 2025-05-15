@@ -2,33 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Networking Overview</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Networking Overview</h1>
+        <p>Understanding the Basics of Computer Networks</p>
     </header>
+    
     <nav>
-        <a href="index.html">Home</a>
-        <a href="wired.html">Wired Network</a>
-        <a href="wireless.html">Wireless Networks</a>
-        <a href="resources.html">Summary & Resources</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Networking Overview</a></li>
+            <li><a href="wired.html">Wired Networks</a></li>
+            <li><a href="wireless.html">Wireless Networks</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
     </nav>
+    
     <main>
-        <h2>Networking Components</h2>
-        <p>Includes routers, switches, network cables, and more.</p>
-
-        <h2>Network Addressing</h2>
-        <p>IP addresses allow devices to communicate on a network.</p>
-
-        <h2>Networking Benefits</h2>
-        <p>Enables file sharing, communication, and internet access.</p>
-
-        <h2>Network Types</h2>
-        <p>LAN, WAN, MAN, and PAN are different network types based on area and scope.</p>
-
-        <a href="https://www.youtube.com/watch?v=3QhU9jd03a0" target="_blank">Watch: Computer Networking Basics</a>
+        <section>
+            <h2>What is a Computer Network?</h2>
+            <p>A computer network is a system that connects multiple computers and devices to share resources and communicate with each other. Networks can range from small home setups to vast global systems like the internet.</p>
+            
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/08/41/computer-1869236_1280.jpg" alt="Network diagram" width="600">
+        </section>
+        
+        <section>
+            <h2>Networking Components</h2>
+            <p>Key components of a computer network include:</p>
+            <ul>
+                <li><strong>Nodes:</strong> Devices connected to the network (computers, printers, servers)</li>
+                <li><strong>Network Interface Cards (NIC):</strong> Hardware that connects devices to the network</li>
+                <li><strong>Switches & Hubs:</strong> Devices that connect multiple devices on a network</li>
+                <li><strong>Routers:</strong> Devices that connect different networks together</li>
+                <li><strong>Cables/Wireless:</strong> The medium for data transmission</li>
+                <li><strong>Protocols:</strong> Rules for communication (TCP/IP, HTTP, FTP)</li>
+            </ul>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3QhU9jd03a0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Network Addressing</h2>
+            <p>Network addressing helps identify devices and route data:</p>
+            <ul>
+                <li><strong>MAC Address:</strong> Unique hardware identifier for network interfaces</li>
+                <li><strong>IP Address:</strong> Logical address assigned to each device (IPv4 like 192.168.1.1 or IPv6)</li>
+                <li><strong>DNS:</strong> Translates domain names (google.com) to IP addresses</li>
+                <li><strong>Port Numbers:</strong> Identify specific services or applications</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Network Types</h2>
+            <p>Networks can be categorized by size and purpose:</p>
+            <ul>
+                <li><strong>PAN (Personal Area Network):</strong> Very small network around an individual</li>
+                <li><strong>LAN (Local Area Network):</strong> Small geographic area like home or office</li>
+                <li><strong>WAN (Wide Area Network):</strong> Spans large distances (the internet is the largest WAN)</li>
+                <li><strong>MAN (Metropolitan Area Network):</strong> City-wide network</li>
+                <li><strong>VPN (Virtual Private Network):</strong> Secure network over public infrastructure</li>
+            </ul>
+            
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/08/41/computer-1869236_1280.jpg" alt="Different network types" width="600">
+        </section>
     </main>
+    
+    <footer>
+        <p>&copy; 2023 Computer Networks Educational Site. For educational purposes only.</p>
+    </footer>
 </body>
 </html>
